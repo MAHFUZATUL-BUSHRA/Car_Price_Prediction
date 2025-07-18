@@ -69,10 +69,14 @@ This project uses machine learning to predict the price of a used car. The model
    * Evaluating model performance using metrics such as R² score and RMSE
 
 ---
+## Open `Car_Price_Prediction.ipynb` and follow the steps.
 
-# Selected Features:
-![My Project Screenshot](Car_Price_Prediction/Features.png)
+---
 
+## Selected Features:
+![Features](https://github.com/MAHFUZATUL-BUSHRA/Car_Price_Prediction/blob/main/Features.png)
+
+--- 
 
 ## 📈 Model Performance
 
@@ -84,9 +88,7 @@ This project uses machine learning to predict the price of a used car. The model
 
 ---
 
-## Open `Car_Price_Prediction.ipynb` and follow the steps.
 
----
 
 ## 🔧 Dependencies
 
