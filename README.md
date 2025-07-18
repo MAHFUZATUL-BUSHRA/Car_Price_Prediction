@@ -70,6 +70,10 @@ This project uses machine learning to predict the price of a used car. The model
 
 ---
 
+# Selected Features:
+![My Project Screenshot](Car_Price_Prediction/Features.png)
+
+
 ## 📈 Model Performance
 
 | Model                   | R² Score | RMSE |
