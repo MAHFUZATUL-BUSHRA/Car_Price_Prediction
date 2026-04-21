@@ -14,15 +14,16 @@ A machine learning model can be used to predict used car prices by considering a
 
 # Observations :
 
-## The following observations were made during the course of this project:
+## The following observations were made during this project:
+   * The manfacturer Location of the car is the most important features for predicting the price of a used car.
+   * The no. of years the car used has a negative on the price.
+   * The mileage of the car also has impact on the price.
+   * The power of the car has impact on the price.
+   * The engine of the car has impact on the price.
+   * The no. of seats the car has impact on the price.
+   * The Kilometers the car driven has small impact on the price
 
-    * The manfacturer Location of the car is the most important features for predicting the price of a used car.
-    * The no. of years the car used has a negative on the price.
-    * The mileage of the car also has impact on the price.
-    * The power of the car has impact on the price.
-    * The engine of the car has impact on the price.
-    * The no. of seats the car has impact on the price.
-    * The Kilometers the car driven has small impact on the price
+  
 
 # Insights:
 
@@ -98,7 +99,7 @@ This project uses machine learning to predict the price of a used car. The model
 * scikit-learn
 * matplotlib
 * seaborn
-* jupyter
+* jupyter notebook
 
 ---
 
