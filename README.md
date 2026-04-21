@@ -24,13 +24,14 @@ A machine learning model can be used to predict used car prices by considering a
    * The Kilometers the car driven has small impact on the price
 
   
-
+--- 
 # Insights:
 
 The insights from this project can be used by car dealerships, car buyers, and other businesses that are involved in the used car market. These insights can help these businesses to make more informed decisions about the pricing of used cars. For example, car dealerships can use these insights to set more competitive prices for their used cars. Car buyers can use these insights to get a better deal on a used car. And other businesses that are involved in the used car market can use these insights to improve their operations.# Price-Prediction-for-Used-Cars-Datascience-Project
 
 This project uses machine learning to predict the price of a used car. The model is trained on a dataset of historical car sales data, and it can then be used to predict the price of a car based on its features.
 
+---
 ## 📁 Dataset Overview
 
 * **Source**: [train-data.csv](https://github.com/MAHFUZATUL-BUSHRA/Car_Price_Prediction/blob/main/train-data.csv)
@@ -70,7 +71,28 @@ This project uses machine learning to predict the price of a used car. The model
    * Evaluating model performance using metrics such as R² score and RMSE
 
 ---
-## Open `Car_Price_Prediction.ipynb` and follow the steps.
+
+## 🔧 Dependencies
+
+* Python 3.x
+* pandas
+* numpy
+* scikit-learn
+* matplotlib
+* seaborn
+* jupyter notebook
+
+---
+
+### 📊 Models Implemented
+
+The following regression models were used:
+* Linear Regression
+* Lasso Regression (L1 Regularization)
+* Ridge Regression (L2 Regularization)
+* Decision Tree Regressor
+* Random Forest Regressor
+Cross-validation:5-Fold Cross Validation applied for tree-based models.
 
 ---
 ## Location vs Price
@@ -86,27 +108,40 @@ This project uses machine learning to predict the price of a used car. The model
 
 ## 📈 Model Performance
 
-| Model                   | R² Score | RMSE |
-| ----------------------- | -------- | ---- |
-| Linear Regression       | 0.76     | 1.25 |
-| Random Forest Regressor | 0.91     | 0.85 |
-
-
----
-
-
-
-## 🔧 Dependencies
-
-* Python 3.x
-* pandas
-* numpy
-* scikit-learn
-* matplotlib
-* seaborn
-* jupyter notebook
+| Model             | Train Score | Test Score | Cross-Val Score |
+| ----------------- | ----------- | ---------- | --------------- |
+| Linear Regression | 0.70        | 0.73       | —               |
+| Lasso Regression  | 0.56        | 0.60       | —               |
+| Ridge Regression  | 0.70        | 0.73       | —               |
+| Decision Tree     | 0.99        | 0.84       | 0.76            |
+| Random Forest     | 0.98        | **0.91**   | **0.87**        |
 
 ---
+
+## 🔍 Key Insights
+### Linear & Ridge Regression
+* Moderate performance (~0.73)
+* Indicates partial linear relationship in data
+### Lasso Regression
+* Lower performance due to strong regularization
+* Likely removed important features
+### Decision Tree
+* Extremely high training score (~1.0)
+* Lower test & CV score → overfitting
+### Random Forest (Best Model)
+* Highest test score (~0.91)
+* Strong cross-validation performance (~0.87)
+* Handles non-linearity and reduces overfitting
+
+---
+## ✅ Final Conclusion
+
+The Random Forest Regressor outperformed all other models and is selected as the final model for car price prediction.
+
+* Provides the best balance between bias and variance
+* Generalizes well on unseen data
+* Robust against overfitting compared to Decision Trees
+---  
 
 ## 📌 Future Enhancements
 
@@ -115,6 +150,10 @@ This project uses machine learning to predict the price of a used car. The model
 * Deploy the model using Flask or Streamlit for user interaction
 
 ---
+## ▶️ Usage Instructions
+
+To explore the implementation, open the `Car_Price_Prediction.ipynb` notebook in Jupyter Notebook or JupyterLab and execute the cells sequentially.
+
 
 
 
