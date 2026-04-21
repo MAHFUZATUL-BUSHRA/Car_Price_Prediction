@@ -73,8 +73,10 @@ This project uses machine learning to predict the price of a used car. The model
 ## Open `Car_Price_Prediction.ipynb` and follow the steps.
 
 ---
-## Plot Location vs Price
+## Location vs Price
 ![price](https://github.com/MAHFUZATUL-BUSHRA/Car_Price_Prediction/blob/main/Boxen%20.png)
+## Fuel_Type vs Price
+![fueltype](https://github.com/MAHFUZATUL-BUSHRA/Car_Price_Prediction/blob/main/fuel%20types.png)
 ## Selected Features:
 ![Features](https://github.com/MAHFUZATUL-BUSHRA/Car_Price_Prediction/blob/main/Features.png)
 
